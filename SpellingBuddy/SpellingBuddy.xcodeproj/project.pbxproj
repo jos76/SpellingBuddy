@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC252A262C7F79A300FF1016 /* SpellingWordSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A252C7F79A300FF1016 /* SpellingWordSamples.swift */; };
+		FC252A282C7F7A3C00FF1016 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A272C7F7A3C00FF1016 /* PreviewContainer.swift */; };
+		FC252A2A2C7F7D7900FF1016 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A292C7F7D7900FF1016 /* MainView.swift */; };
+		FC558B0A2C809AB200AC7F52 /* SpellingWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC558B092C809AB200AC7F52 /* SpellingWordList.swift */; };
+		FC558B0C2C80A82F00AC7F52 /* SpeakWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */; };
+		FC980A832C81EB0500D0B21F /* SettingsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */; };
+		FC980A852C81F20C00D0B21F /* SpeechSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC980A842C81F20C00D0B21F /* SpeechSettings.swift */; };
+		FCD6760E2C7F948F00312FF1 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */; };
+		FCF0AF592C7F57DD0031BD8C /* SpellingBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */; };
+		FCF0AF5B2C7F57DD0031BD8C /* SpellingWordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF5A2C7F57DD0031BD8C /* SpellingWordListView.swift */; };
+		FCF0AF5F2C7F57DE0031BD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF0AF5E2C7F57DE0031BD8C /* Assets.xcassets */; };
+		FCF0AF622C7F57DE0031BD8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF0AF612C7F57DE0031BD8C /* Preview Assets.xcassets */; };
+		FCF0AF6C2C7F57DE0031BD8C /* SpellingBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF6B2C7F57DE0031BD8C /* SpellingBuddyTests.swift */; };
+		FCF0AF762C7F57DE0031BD8C /* SpellingBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF752C7F57DE0031BD8C /* SpellingBuddyUITests.swift */; };
+		FCF0AF782C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF772C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCF0AF682C7F57DE0031BD8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCF0AF4D2C7F57DD0031BD8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCF0AF542C7F57DD0031BD8C;
+			remoteInfo = SpellingBuddy;
+		};
+		FCF0AF722C7F57DE0031BD8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCF0AF4D2C7F57DD0031BD8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCF0AF542C7F57DD0031BD8C;
+			remoteInfo = SpellingBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC252A252C7F79A300FF1016 /* SpellingWordSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordSamples.swift; sourceTree = "<group>"; };
+		FC252A272C7F7A3C00FF1016 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		FC252A292C7F7D7900FF1016 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FC558B092C809AB200AC7F52 /* SpellingWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordList.swift; sourceTree = "<group>"; };
+		FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakWordsView.swift; sourceTree = "<group>"; };
+		FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheetView.swift; sourceTree = "<group>"; };
+		FC980A842C81F20C00D0B21F /* SpeechSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSettings.swift; sourceTree = "<group>"; };
+		FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
+		FCF0AF552C7F57DD0031BD8C /* SpellingBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyApp.swift; sourceTree = "<group>"; };
+		FCF0AF5A2C7F57DD0031BD8C /* SpellingWordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordListView.swift; sourceTree = "<group>"; };
+		FCF0AF5E2C7F57DE0031BD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCF0AF612C7F57DE0031BD8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCF0AF672C7F57DE0031BD8C /* SpellingBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellingBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF0AF6B2C7F57DE0031BD8C /* SpellingBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyTests.swift; sourceTree = "<group>"; };
+		FCF0AF712C7F57DE0031BD8C /* SpellingBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellingBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF0AF752C7F57DE0031BD8C /* SpellingBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyUITests.swift; sourceTree = "<group>"; };
+		FCF0AF772C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCF0AF522C7F57DD0031BD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF642C7F57DE0031BD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF6E2C7F57DE0031BD8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCF0AF4C2C7F57DD0031BD8C = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF572C7F57DD0031BD8C /* SpellingBuddy */,
+				FCF0AF6A2C7F57DE0031BD8C /* SpellingBuddyTests */,
+				FCF0AF742C7F57DE0031BD8C /* SpellingBuddyUITests */,
+				FCF0AF562C7F57DD0031BD8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCF0AF562C7F57DD0031BD8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF552C7F57DD0031BD8C /* SpellingBuddy.app */,
+				FCF0AF672C7F57DE0031BD8C /* SpellingBuddyTests.xctest */,
+				FCF0AF712C7F57DE0031BD8C /* SpellingBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCF0AF572C7F57DD0031BD8C /* SpellingBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */,
+				FC252A292C7F7D7900FF1016 /* MainView.swift */,
+				FCF0AF5A2C7F57DD0031BD8C /* SpellingWordListView.swift */,
+				FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */,
+				FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */,
+				FC980A842C81F20C00D0B21F /* SpeechSettings.swift */,
+				FC558B092C809AB200AC7F52 /* SpellingWordList.swift */,
+				FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */,
+				FCF0AF5E2C7F57DE0031BD8C /* Assets.xcassets */,
+				FCF0AF602C7F57DE0031BD8C /* Preview Content */,
+			);
+			path = SpellingBuddy;
+			sourceTree = "<group>";
+		};
+		FCF0AF602C7F57DE0031BD8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF612C7F57DE0031BD8C /* Preview Assets.xcassets */,
+				FC252A252C7F79A300FF1016 /* SpellingWordSamples.swift */,
+				FC252A272C7F7A3C00FF1016 /* PreviewContainer.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCF0AF6A2C7F57DE0031BD8C /* SpellingBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF6B2C7F57DE0031BD8C /* SpellingBuddyTests.swift */,
+			);
+			path = SpellingBuddyTests;
+			sourceTree = "<group>";
+		};
+		FCF0AF742C7F57DE0031BD8C /* SpellingBuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCF0AF752C7F57DE0031BD8C /* SpellingBuddyUITests.swift */,
+				FCF0AF772C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift */,
+			);
+			path = SpellingBuddyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCF0AF542C7F57DD0031BD8C /* SpellingBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF0AF7B2C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddy" */;
+			buildPhases = (
+				FCF0AF512C7F57DD0031BD8C /* Sources */,
+				FCF0AF522C7F57DD0031BD8C /* Frameworks */,
+				FCF0AF532C7F57DD0031BD8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellingBuddy;
+			productName = SpellingBuddy;
+			productReference = FCF0AF552C7F57DD0031BD8C /* SpellingBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCF0AF662C7F57DE0031BD8C /* SpellingBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF0AF7E2C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddyTests" */;
+			buildPhases = (
+				FCF0AF632C7F57DE0031BD8C /* Sources */,
+				FCF0AF642C7F57DE0031BD8C /* Frameworks */,
+				FCF0AF652C7F57DE0031BD8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCF0AF692C7F57DE0031BD8C /* PBXTargetDependency */,
+			);
+			name = SpellingBuddyTests;
+			productName = SpellingBuddyTests;
+			productReference = FCF0AF672C7F57DE0031BD8C /* SpellingBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCF0AF702C7F57DE0031BD8C /* SpellingBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF0AF812C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddyUITests" */;
+			buildPhases = (
+				FCF0AF6D2C7F57DE0031BD8C /* Sources */,
+				FCF0AF6E2C7F57DE0031BD8C /* Frameworks */,
+				FCF0AF6F2C7F57DE0031BD8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCF0AF732C7F57DE0031BD8C /* PBXTargetDependency */,
+			);
+			name = SpellingBuddyUITests;
+			productName = SpellingBuddyUITests;
+			productReference = FCF0AF712C7F57DE0031BD8C /* SpellingBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCF0AF4D2C7F57DD0031BD8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FCF0AF542C7F57DD0031BD8C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FCF0AF662C7F57DE0031BD8C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FCF0AF542C7F57DD0031BD8C;
+					};
+					FCF0AF702C7F57DE0031BD8C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FCF0AF542C7F57DD0031BD8C;
+					};
+				};
+			};
+			buildConfigurationList = FCF0AF502C7F57DD0031BD8C /* Build configuration list for PBXProject "SpellingBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCF0AF4C2C7F57DD0031BD8C;
+			productRefGroup = FCF0AF562C7F57DD0031BD8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCF0AF542C7F57DD0031BD8C /* SpellingBuddy */,
+				FCF0AF662C7F57DE0031BD8C /* SpellingBuddyTests */,
+				FCF0AF702C7F57DE0031BD8C /* SpellingBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCF0AF532C7F57DD0031BD8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF0AF622C7F57DE0031BD8C /* Preview Assets.xcassets in Resources */,
+				FCF0AF5F2C7F57DE0031BD8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF652C7F57DE0031BD8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF6F2C7F57DE0031BD8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCF0AF512C7F57DD0031BD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC558B0A2C809AB200AC7F52 /* SpellingWordList.swift in Sources */,
+				FCF0AF5B2C7F57DD0031BD8C /* SpellingWordListView.swift in Sources */,
+				FC252A2A2C7F7D7900FF1016 /* MainView.swift in Sources */,
+				FCD6760E2C7F948F00312FF1 /* SpeechHelper.swift in Sources */,
+				FC980A852C81F20C00D0B21F /* SpeechSettings.swift in Sources */,
+				FCF0AF592C7F57DD0031BD8C /* SpellingBuddyApp.swift in Sources */,
+				FC252A262C7F79A300FF1016 /* SpellingWordSamples.swift in Sources */,
+				FC980A832C81EB0500D0B21F /* SettingsSheetView.swift in Sources */,
+				FC252A282C7F7A3C00FF1016 /* PreviewContainer.swift in Sources */,
+				FC558B0C2C80A82F00AC7F52 /* SpeakWordsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF632C7F57DE0031BD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF0AF6C2C7F57DE0031BD8C /* SpellingBuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0AF6D2C7F57DE0031BD8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF0AF762C7F57DE0031BD8C /* SpellingBuddyUITests.swift in Sources */,
+				FCF0AF782C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCF0AF692C7F57DE0031BD8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCF0AF542C7F57DD0031BD8C /* SpellingBuddy */;
+			targetProxy = FCF0AF682C7F57DE0031BD8C /* PBXContainerItemProxy */;
+		};
+		FCF0AF732C7F57DE0031BD8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCF0AF542C7F57DD0031BD8C /* SpellingBuddy */;
+			targetProxy = FCF0AF722C7F57DE0031BD8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCF0AF792C7F57DE0031BD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCF0AF7A2C7F57DE0031BD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCF0AF7C2C7F57DE0031BD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpellingBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spelling Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCF0AF7D2C7F57DE0031BD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpellingBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Spelling Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCF0AF7F2C7F57DE0031BD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellingBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpellingBuddy";
+			};
+			name = Debug;
+		};
+		FCF0AF802C7F57DE0031BD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellingBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpellingBuddy";
+			};
+			name = Release;
+		};
+		FCF0AF822C7F57DE0031BD8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpellingBuddy;
+			};
+			name = Debug;
+		};
+		FCF0AF832C7F57DE0031BD8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56D9Z38X43;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savage.SpellingBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpellingBuddy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCF0AF502C7F57DD0031BD8C /* Build configuration list for PBXProject "SpellingBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF0AF792C7F57DE0031BD8C /* Debug */,
+				FCF0AF7A2C7F57DE0031BD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF0AF7B2C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF0AF7C2C7F57DE0031BD8C /* Debug */,
+				FCF0AF7D2C7F57DE0031BD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF0AF7E2C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF0AF7F2C7F57DE0031BD8C /* Debug */,
+				FCF0AF802C7F57DE0031BD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCF0AF812C7F57DE0031BD8C /* Build configuration list for PBXNativeTarget "SpellingBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF0AF822C7F57DE0031BD8C /* Debug */,
+				FCF0AF832C7F57DE0031BD8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCF0AF4D2C7F57DD0031BD8C /* Project object */;
+}
