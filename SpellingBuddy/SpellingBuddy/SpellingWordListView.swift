@@ -74,19 +74,20 @@ struct SpellingWordListView: View {
                         Text("Start Practice")
                             .padding(8)
                     }.buttonStyle(.borderedProminent)
+                    Spacer()
                 }
             }.toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Add Word", systemImage: "plus") {
                         addWord()
-                    }
+                    }.disabled(wordText.isEmpty)
                 }
                 ToolbarItem() {
                     Button("Delete All", systemImage: "trash") {
                         if wordList.spellingWords.count > 0 {
                             showDeleteAll.toggle()
                         }
-                    }.alert("Delete All Words?", isPresented: $showDeleteAll) {
+                    }.disabled(wordList.spellingWords.isEmpty).alert("Delete All Words?", isPresented: $showDeleteAll) {
                         Button("Cancel") {
                             showDeleteAll.toggle()
                         }

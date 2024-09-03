@@ -14,6 +14,7 @@ struct MainView: View {
     @State private var showListInput = false
     @State private var listName = ""
     @State var presentSettings: Bool = false
+    @State var showAddError: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -58,8 +59,12 @@ struct MainView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Add List", systemImage: "plus") {
-                        addList()
-                    }
+                        if listName.isEmpty {
+                            showAddError.toggle()
+                        } else {
+                            addList()
+                        }
+                    }.disabled(listName.isEmpty)
                 }
             }
         }
