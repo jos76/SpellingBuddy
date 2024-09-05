@@ -14,7 +14,7 @@ struct SpeakWordsView: View {
     @State private var currentWordIndex = 0
     private let speechHelper = SpeechHelper()
     @State private var speechIdentifier = SpeechSettings.defaultIdentifier
-    @State var presentSettings: Bool = false
+    @State private var showInfoAlert = false
 
     init(wordList: SpellingWordList)
     {
@@ -71,6 +71,16 @@ struct SpeakWordsView: View {
                     Divider()
                 }
                 Spacer()
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Info", systemImage: "info.circle") {
+                        showInfoAlert.toggle()
+                    }.alert("Please ensure your phone is not on silent and your volume is turned up", isPresented: $showInfoAlert) {
+                        Button("Ok") {
+                            showInfoAlert.toggle()
+                        }
+                    }
+                }
             }
         }.onAppear(perform: load)
     }
@@ -100,6 +110,9 @@ struct SpeakWordsView: View {
 }
 
 //#Preview {
+//    let preview = Preview()
+//    preview.addExamples(SpellingWordList.sampleList)
 //    var wordList = SpellingWordList.sampleList[0]
 //    return SpeakWordsView(wordList: wordList)
+//        .modelContainer(preview.container)
 //}
