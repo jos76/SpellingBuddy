@@ -14,7 +14,7 @@ struct SettingsSheetView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var settings: SpeechSettings?
     @State private var voiceSelection: String?
-    private let speechHelper = SpeechHelper()
+    private let speechHelper = SpeechHelper.shared
     private var voices = AVSpeechSynthesisVoice.speechVoices().filter { voice in
         voice.language.starts(with: "en") && voice.voiceTraits != .isNoveltyVoice
     }

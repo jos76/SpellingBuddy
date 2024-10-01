@@ -7,18 +7,20 @@
 
 import SwiftUI
 import SwiftData
+import AVFoundation
 
 struct SpeakWordsView: View {
     @Environment(\.modelContext) private var modelContext
-    private let wordList: SpellingWordList
-    @State private var currentWordIndex = 0
-    private let speechHelper = SpeechHelper()
-    @State private var speechIdentifier = SpeechSettings.defaultIdentifier
-    @State private var showInfoAlert = false
+    @State private var model: SpeakWordsViewModel
+    @State private var currentApiWord: ApiWord? = nil
+    @State private var presentInfoSheet = false
 
-    init(wordList: SpellingWordList)
+    init(model: SpeakWordsViewModel)
     {
-        self.wordList = wordList
+        self.model = model
+        Task {
+            await model.loadApiWords()
+        }
     }
     
     var body: some View {
@@ -28,57 +30,95 @@ struct SpeakWordsView: View {
                 Text("Selected List:")
                     .font(.title)
                     .fontWeight(.bold)
-                Text(wordList.name)
+                Text(model.name)
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
-                Text("Practicing word \(currentWordIndex + 1) of \(wordList.spellingWords.count)")
+                Text("Practicing word \(model.currentIndex + 1) of \(model.count)")
                     .font(.title2)
                 Spacer()
-                VStack() {
+                VStack(spacing: 25.0) {
                     Divider()
-                    Button("Speak Previous Word", systemImage: "backward.circle") {
-                        if currentWordIndex > 0 {
-                            currentWordIndex = currentWordIndex - 1
+                    HStack(spacing: 30.0) {
+                        Button {
+                            model.speakCurrentExampleSentence()
+                        } label: {
+                            Image(systemName: "bubble.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }.disabled(model.currentExampleSentence == nil)
+                        Button {
+                            model.speakCurrentDefinition()
+                        } label: {
+                            Image(systemName: "book.closed.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }.disabled(model.currentDefinition == nil)
+                    }
+                    Divider()
+                    HStack(spacing: 30.0) {
+                        Button {
+                            model.speakCurrentWordSlowly()
+                        } label: {
+                            Image(systemName: "tortoise.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
                         }
-                        let text = currentText()
-                        speak(text: text)
-                    }.buttonStyle(.borderedProminent)
-                        .padding()
-                    Divider()
-                    Button("Speak Word Slowly", systemImage: "tortoise") {
-                        let text = currentText()
-                        speakSlowly(text: text)
-                    }.buttonStyle(.borderedProminent)
-                        .padding()
-                    Divider()
-                    Button("Speak Current Word", systemImage: "person.wave.2") {
-                        let text = currentText()
-                        speak(text: text)
-                    }.buttonStyle(.borderedProminent)
-                        .padding()
-                    Divider()
-                    Button("Speak Next Word", systemImage: "forward.circle") {
-                        if currentWordIndex + 1 >= wordList.spellingWords.count {
-                            speak(text: "Spelling words completed!")
-                        } else {
-                            currentWordIndex = currentWordIndex + 1
-                            let text = currentText()
-                            speak(text: text)
+                        Button {
+                            model.speakCurrentWordMachineVoice()
+                        } label: {
+                            Image(systemName: "waveform.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
                         }
-                    }.buttonStyle(.borderedProminent)
-                        .padding()
+                    }
+                    Divider()
+                    HStack(spacing: 30.0) {
+                        Button {
+                            model.changeCurrentIndex(offset: -1)
+                            model.speakCurrentWord()
+                        } label: {
+                            Image(systemName: "backward.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }.disabled(model.onFirstWord)
+                        Button {
+                            model.speakCurrentWord()
+                        } label: {
+                            Image(systemName: "play.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }
+                        Button {
+                            model.changeCurrentIndex(offset: 1)
+                            model.speakCurrentWord()
+                        } label: {
+                            Image(systemName: "forward.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }.disabled(model.onLastWord)
+                    }
                     Divider()
                 }
                 Spacer()
             }.toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Reset", systemImage: "arrow.trianglehead.clockwise") {
+                        model.resetIndex()
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Info", systemImage: "info.circle") {
-                        showInfoAlert.toggle()
-                    }.alert("Please ensure your phone is not on silent and your volume is turned up", isPresented: $showInfoAlert) {
-                        Button("Ok") {
-                            showInfoAlert.toggle()
-                        }
+                        presentInfoSheet.toggle()
+                    }.sheet(isPresented: $presentInfoSheet) {
+                        InfoSheetView()
                     }
                 }
             }
@@ -89,30 +129,14 @@ struct SpeakWordsView: View {
         let request = FetchDescriptor<SpeechSettings>()
         let data = try? modelContext.fetch(request)
         let settings = data?.first ?? SpeechSettings(voiceIdentifier: SpeechSettings.defaultIdentifier)
-        speechIdentifier = settings.voiceIdentifier
-    }
-    
-    private func speak(text: String) {
-        speechHelper.speak(text: text, identifier: speechIdentifier)
-    }
-    
-    private func speakSlowly(text: String) {
-        speechHelper.speakSlowly(text: text, identifier: speechIdentifier)
-    }
-    
-    private func currentText() -> String {
-        if wordList.spellingWords.count > 0 {
-            return wordList.spellingWords[currentWordIndex]
-        } else {
-            return ""
-        }
+        model.speechIdentifier = settings.voiceIdentifier
     }
 }
 
-//#Preview {
-//    let preview = Preview()
-//    preview.addExamples(SpellingWordList.sampleList)
-//    var wordList = SpellingWordList.sampleList[0]
-//    return SpeakWordsView(wordList: wordList)
-//        .modelContainer(preview.container)
-//}
+#Preview {
+    let preview = Preview()
+    preview.addExamples(SpellingWordList.sampleList)
+    var wordList = SpellingWordList.sampleList[0]
+    return SpeakWordsView(model: SpeakWordsViewModel(wordList: wordList))
+        .modelContainer(preview.container)
+}

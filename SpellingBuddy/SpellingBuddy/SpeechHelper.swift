@@ -14,11 +14,15 @@ struct SpeechHelper {
     private let defaultRate: Float = 0.5
     private let slowRate: Float = 0.35
     
-    public func speak(text: String, identifier: String) {
+    static let shared = SpeechHelper()
+    
+    private init() {}
+    
+    func speak(text: String, identifier: String) {
         speak(text: text, rate: AVSpeechUtteranceDefaultSpeechRate, identifier: identifier)
     }
     
-    public func speakSlowly(text: String, identifier: String) {
+    func speakSlowly(text: String, identifier: String) {
         speak(text: text, rate: AVSpeechUtteranceMinimumSpeechRate, identifier: identifier)
     }
     
@@ -37,5 +41,9 @@ struct SpeechHelper {
 
         // Tell the synthesizer to speak the utterance.
         speechSynthesizer.speak(utterance)
+    }
+    
+    func stop() {
+        speechSynthesizer.stopSpeaking(at: .immediate)
     }
 }

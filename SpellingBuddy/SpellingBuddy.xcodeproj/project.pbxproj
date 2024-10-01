@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC00BAC02CA6E06900ACCA8A /* InfoSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00BABF2CA6E06300ACCA8A /* InfoSheetView.swift */; };
 		FC252A262C7F79A300FF1016 /* SpellingWordSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A252C7F79A300FF1016 /* SpellingWordSamples.swift */; };
 		FC252A282C7F7A3C00FF1016 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A272C7F7A3C00FF1016 /* PreviewContainer.swift */; };
 		FC252A2A2C7F7D7900FF1016 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC252A292C7F7D7900FF1016 /* MainView.swift */; };
+		FC492E592C8DE34D00B87271 /* FreeDictionaryApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC492E582C8DE34D00B87271 /* FreeDictionaryApiService.swift */; };
+		FC492E5B2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC492E5A2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift */; };
+		FC492E5D2C8DED9700B87271 /* FreeDictionaryApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC492E5C2C8DED9700B87271 /* FreeDictionaryApiServiceTests.swift */; };
 		FC558B0A2C809AB200AC7F52 /* SpellingWordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC558B092C809AB200AC7F52 /* SpellingWordList.swift */; };
 		FC558B0C2C80A82F00AC7F52 /* SpeakWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */; };
 		FC980A832C81EB0500D0B21F /* SettingsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */; };
 		FC980A852C81F20C00D0B21F /* SpeechSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC980A842C81F20C00D0B21F /* SpeechSettings.swift */; };
+		FCC20E232C9A0BAF0015019A /* SpeakWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC20E222C9A0BAA0015019A /* SpeakWordsViewModel.swift */; };
+		FCC20E252C9A19C20015019A /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC20E242C9A19BE0015019A /* AudioManager.swift */; };
 		FCD6760E2C7F948F00312FF1 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */; };
 		FCF0AF592C7F57DD0031BD8C /* SpellingBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */; };
 		FCF0AF5B2C7F57DD0031BD8C /* SpellingWordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF5A2C7F57DD0031BD8C /* SpellingWordListView.swift */; };
@@ -42,13 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC00BABF2CA6E06300ACCA8A /* InfoSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheetView.swift; sourceTree = "<group>"; };
 		FC252A252C7F79A300FF1016 /* SpellingWordSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordSamples.swift; sourceTree = "<group>"; };
 		FC252A272C7F7A3C00FF1016 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		FC252A292C7F7D7900FF1016 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FC492E582C8DE34D00B87271 /* FreeDictionaryApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDictionaryApiService.swift; sourceTree = "<group>"; };
+		FC492E5A2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDictionaryApiModels.swift; sourceTree = "<group>"; };
+		FC492E5C2C8DED9700B87271 /* FreeDictionaryApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDictionaryApiServiceTests.swift; sourceTree = "<group>"; };
 		FC558B092C809AB200AC7F52 /* SpellingWordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordList.swift; sourceTree = "<group>"; };
 		FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakWordsView.swift; sourceTree = "<group>"; };
 		FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheetView.swift; sourceTree = "<group>"; };
 		FC980A842C81F20C00D0B21F /* SpeechSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSettings.swift; sourceTree = "<group>"; };
+		FCC20E222C9A0BAA0015019A /* SpeakWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakWordsViewModel.swift; sourceTree = "<group>"; };
+		FCC20E242C9A19BE0015019A /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
 		FCF0AF552C7F57DD0031BD8C /* SpellingBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyApp.swift; sourceTree = "<group>"; };
@@ -110,14 +122,19 @@
 		FCF0AF572C7F57DD0031BD8C /* SpellingBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				FC00BABF2CA6E06300ACCA8A /* InfoSheetView.swift */,
+				FCC20E242C9A19BE0015019A /* AudioManager.swift */,
 				FCF0AF582C7F57DD0031BD8C /* SpellingBuddyApp.swift */,
 				FC252A292C7F7D7900FF1016 /* MainView.swift */,
 				FCF0AF5A2C7F57DD0031BD8C /* SpellingWordListView.swift */,
 				FC558B0B2C80A82F00AC7F52 /* SpeakWordsView.swift */,
+				FCC20E222C9A0BAA0015019A /* SpeakWordsViewModel.swift */,
 				FC980A822C81EB0500D0B21F /* SettingsSheetView.swift */,
 				FC980A842C81F20C00D0B21F /* SpeechSettings.swift */,
 				FC558B092C809AB200AC7F52 /* SpellingWordList.swift */,
 				FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */,
+				FC492E582C8DE34D00B87271 /* FreeDictionaryApiService.swift */,
+				FC492E5A2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift */,
 				FCF0AF5E2C7F57DE0031BD8C /* Assets.xcassets */,
 				FCF0AF602C7F57DE0031BD8C /* Preview Content */,
 			);
@@ -138,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF0AF6B2C7F57DE0031BD8C /* SpellingBuddyTests.swift */,
+				FC492E5C2C8DED9700B87271 /* FreeDictionaryApiServiceTests.swift */,
 			);
 			path = SpellingBuddyTests;
 			sourceTree = "<group>";
@@ -281,11 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC492E5B2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift in Sources */,
+				FC00BAC02CA6E06900ACCA8A /* InfoSheetView.swift in Sources */,
 				FC558B0A2C809AB200AC7F52 /* SpellingWordList.swift in Sources */,
 				FCF0AF5B2C7F57DD0031BD8C /* SpellingWordListView.swift in Sources */,
+				FC492E592C8DE34D00B87271 /* FreeDictionaryApiService.swift in Sources */,
 				FC252A2A2C7F7D7900FF1016 /* MainView.swift in Sources */,
 				FCD6760E2C7F948F00312FF1 /* SpeechHelper.swift in Sources */,
 				FC980A852C81F20C00D0B21F /* SpeechSettings.swift in Sources */,
+				FCC20E232C9A0BAF0015019A /* SpeakWordsViewModel.swift in Sources */,
+				FCC20E252C9A19C20015019A /* AudioManager.swift in Sources */,
 				FCF0AF592C7F57DD0031BD8C /* SpellingBuddyApp.swift in Sources */,
 				FC252A262C7F79A300FF1016 /* SpellingWordSamples.swift in Sources */,
 				FC980A832C81EB0500D0B21F /* SettingsSheetView.swift in Sources */,
@@ -298,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC492E5D2C8DED9700B87271 /* FreeDictionaryApiServiceTests.swift in Sources */,
 				FCF0AF6C2C7F57DE0031BD8C /* SpellingBuddyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
