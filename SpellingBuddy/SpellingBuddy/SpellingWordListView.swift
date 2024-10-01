@@ -18,7 +18,7 @@ struct SpellingWordListView: View {
     @FocusState private var wordTextFocused
     @State private var editingIndex = 0
     @State private var speakIndex = 0
-    private let speechHelper = SpeechHelper()
+    private let speechHelper = SpeechHelper.shared
     @State private var speechIdentifier = SpeechSettings.defaultIdentifier
     
     var body: some View {
@@ -69,7 +69,7 @@ struct SpellingWordListView: View {
                     }
                     Spacer()
                     NavigationLink {
-                        SpeakWordsView(wordList: wordList)
+                        SpeakWordsView(model: SpeakWordsViewModel(wordList: wordList))
                     } label: {
                         Text("Start Practice")
                             .padding(8)
