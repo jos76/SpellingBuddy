@@ -133,10 +133,10 @@ struct SpeakWordsView: View {
     }
 }
 
-#Preview {
-    let preview = Preview()
-    preview.addExamples(SpellingWordList.sampleList)
-    var wordList = SpellingWordList.sampleList[0]
-    return SpeakWordsView(model: SpeakWordsViewModel(wordList: wordList))
-        .modelContainer(preview.container)
-}
+//#Preview {
+//    let preview = Preview()
+//    preview.addExamples(SpellingWordList.sampleList)
+//    var wordList = SpellingWordList.sampleList[0]
+//    return SpeakWordsView(model: SpeakWordsViewModel(wordList: wordList))
+//        .modelContainer(preview.container)
+//}
