@@ -28,6 +28,7 @@
 		FCF0AF6C2C7F57DE0031BD8C /* SpellingBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF6B2C7F57DE0031BD8C /* SpellingBuddyTests.swift */; };
 		FCF0AF762C7F57DE0031BD8C /* SpellingBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF752C7F57DE0031BD8C /* SpellingBuddyUITests.swift */; };
 		FCF0AF782C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0AF772C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift */; };
+		FCFCA7112CAD6575000E5098 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCFCA7102CAD656F000E5098 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		FCF0AF712C7F57DE0031BD8C /* SpellingBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellingBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF0AF752C7F57DE0031BD8C /* SpellingBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyUITests.swift; sourceTree = "<group>"; };
 		FCF0AF772C7F57DE0031BD8C /* SpellingBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCFCA7102CAD656F000E5098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				FCD6760D2C7F948F00312FF1 /* SpeechHelper.swift */,
 				FC492E582C8DE34D00B87271 /* FreeDictionaryApiService.swift */,
 				FC492E5A2C8DE3AE00B87271 /* FreeDictionaryApiModels.swift */,
+				FCFCA7102CAD656F000E5098 /* Info.plist */,
 				FCF0AF5E2C7F57DE0031BD8C /* Assets.xcassets */,
 				FCF0AF602C7F57DE0031BD8C /* Preview Content */,
 			);
@@ -275,6 +278,7 @@
 			files = (
 				FCF0AF622C7F57DE0031BD8C /* Preview Assets.xcassets in Resources */,
 				FCF0AF5F2C7F57DE0031BD8C /* Assets.xcassets in Resources */,
+				FCFCA7112CAD6575000E5098 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
